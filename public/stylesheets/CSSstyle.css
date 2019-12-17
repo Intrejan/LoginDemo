@@ -1,0 +1,145 @@
+.header .logo {
+    background: url("/images/logo.png");
+    float: left;
+    width: 165px;
+    height: 48px;
+    background-size: 165px auto;
+}
+
+.header .sub-logo {
+    display: inline-block;
+    padding: 6px 17px 10px;
+    font-size: 20px;
+    color: #666;
+    margin-left: 16px;
+    position: relative;
+    height: 32px;
+}
+
+.register {
+    height: 510px;
+    padding-left: 818px;
+    background: url("/images/register.jpg") 96px 47px no-repeat #f7f7f7;
+    -webkit-background-size: 634px 442px;
+    -moz-background-size: 634px 442px;
+    background-size: 634px 442px;
+}
+
+.register .input-box {
+    position: relative;
+    zoom: 1;
+    height: 510px;
+    display: table-cell;
+    padding-top: 76px;
+}
+.register-form {
+    background: #fff;
+    width: 290px;
+    margin: auto;
+    height: 364px!important;
+    text-align: left;
+}
+
+.register-form .form-item {
+    width: 246px;
+    white-space: nowrap;
+    vertical-align: top;
+    background: #fff;
+    margin: auto;
+    font-size: 0;
+}
+
+.register-form .form-item.form-title {
+    font-size: 16px;
+    color: #333;
+    padding-top: 27px;
+    font-weight: bolder;
+}
+
+.register-form .form-item.form-alert {
+    padding-top: 16px;
+    padding-bottom: 3px;
+    visibility: hidden;
+}
+
+.register-form .form-item.form-input {
+    padding-bottom: 14px;
+}
+.register-form .form-item.form-input .text_box-wide {
+    width: 228px;
+}
+.register-form .form-item.form-input .text_box-border .text_box {
+    border: none;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    padding: 5px 0 7px;
+    height: 18px;
+    outline: 0;
+}
+.register-form .form-item.form-input .text_box-border {
+    border: 1px solid #ccc;
+    padding: 0 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.register-form .form-item .main-button {
+    font-size: 15px;
+    width: 100%;
+    background: #ff1122;
+    color: #fff;
+    border: none;
+    height: 34px;
+    outline: 0;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 2px;
+}
+.register-form .form-item .switch{
+    font-size: 13px;
+    width: 100%;
+    height: 45px;
+    background: none;
+    color: #ff6655;
+    border:none;
+    cursor: pointer;
+    font-weight: 700;
+}
+.register-form .form-item .go{
+    font-size: 13px;
+    width: 100%;
+    height: 45px;
+    background: none;
+    color: #666666;
+    border:none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.homepage .images-1{
+    line-height:30px;
+    background-color:#eeeeee;
+    height:100%;
+    width:370px;
+    float:left;
+    padding:5px;
+}
+.homepage.video{
+    line-height:30px;
+    background-color:#eeeeee;
+    width:400px;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    padding:5px;
+}
+.homepage .images-2{
+    line-height:30px;
+    background-color:#eeeeee;
+    height:100%;
+    width:370px;
+    float:right;
+    padding:5px;
+}

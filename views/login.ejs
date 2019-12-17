@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/CSSstyle.css" type="text/css">
+    <link rel="stylesheet" href="/stylesheets/Alertstyle.css" type="text/css">
+</head>
+<body>
+<div class="header">
+    <a class="logo" title="Working Group"></a>
+    <span class="sub-logo">登录</span>
+</div>
+
+<div class="alert"></div>
+
+<div class="register">
+    <div class="input-box">
+        <form id="register-form" class="register-form" action="/login" method="post" onsubmit="return false">
+            <div class="form-item form-title">邮箱密码登录</div>
+            <div class="form-item form-alert">
+                <div class="alert-content">
+                </div>
+            </div>
+            <div class="form-item form-input">
+                <div class="text_box-border text_box-wide">
+                    <input name="name" id="mail-text" type="text" class="text_box" autocomplete="off" placeholder="请输入邮箱地址">
+                </div>
+            </div>
+            <div class="form-item form-input">
+                <div class="text_box-border text_box-wide">
+                    <input name="pwd" id="password-text" type="password" class="text_box" autocomplete="off" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="form-item form-input">
+                <button value="submit" id="register-button"  class="main-button" type="submit">立即登录</button>
+            </div>
+            <div class="form-item form-input">
+                <a id="switch" class="switch" href="http://localhost:3000/register">没有账号，立即注册</a>
+            </div>
+
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="/javascripts/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="/javascripts/base64.js"></script>
+<script type="text/javascript">
+$(function () {
+    $('#register-button').on('click',function () {
+        let username = $('#mail-text').val();
+        let password = $('#password-text').val();
+        if(username.length<1){
+            $('.alert').html('请输入邮箱哦').addClass('alert-danger').show().delay(1500).fadeOut();
+        }
+        let b = new Base64();
+        let password_lock = b.encode(password);
+        let data = {username:username,password:password_lock};
+        $.ajax({
+            url:'/login',
+            type:'post',
+            data:data,
+            success:function (data,status) {
+                if(status ==='success'){
+                    $('.alert').html('登陆成功').addClass('alert-success').show().delay(1500).fadeOut();
+                    setTimeout(function(){
+                        location.href='home';
+                    },1500);
+                }
+            },
+            error:function (data,status) {
+                if(status ==='error'){
+                    $('.alert').html('用户名或密码错误').addClass('alert-danger').show().delay(1500).fadeOut();
+                    setTimeout(function(){
+                        location.href='login';
+                    },1500);
+                }
+            }
+        })
+    })
+})
+</script>
+</body>
+</html>
