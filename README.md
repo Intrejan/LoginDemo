@@ -1,2 +1,5 @@
 # LoginDemo
 Express+ejs模板+jQuery实现简单的登陆注册功能
+代码使用了express+ejs的模板，使用jQuery进行Ajax通信，对注册邮箱进行了正则验证，以及对密码进行了加密。
+数据库使用的是MongoDB，需要在本地安装并启动MongoDB服务，代码可以自行创建数据库User，以及数据集users，保存用户的username和password。
+代码自定义了alert的样式，可以提示不同的异常情况：如用户名为空，两次密码不一致，密码不符合要求，邮箱不正确等等情况。
