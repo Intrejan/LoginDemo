@@ -117,29 +117,3 @@
     cursor: pointer;
     font-weight: 700;
 }
-
-.homepage .images-1{
-    line-height:30px;
-    background-color:#eeeeee;
-    height:100%;
-    width:370px;
-    float:left;
-    padding:5px;
-}
-.homepage.video{
-    line-height:30px;
-    background-color:#eeeeee;
-    width:400px;
-    height: 100%;
-    margin: auto;
-    position: relative;
-    padding:5px;
-}
-.homepage .images-2{
-    line-height:30px;
-    background-color:#eeeeee;
-    height:100%;
-    width:370px;
-    float:right;
-    padding:5px;
-}

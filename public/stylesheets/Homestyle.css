@@ -1,0 +1,142 @@
+.homepage{
+    max-width: 1660px;
+    min-width: 988px;
+    margin: 20px auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.homepage .l-part.video-info {
+    margin-bottom: 16px;
+}
+.v-warp{
+    max-width: 1660px;
+    min-width: 988px;
+    margin: 20px auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.r-part{
+    width: 320px;
+    -ms-flex: none;
+    flex: none;
+    margin-left: 30px;
+}
+.owner-info{
+    margin-bottom: 16px;
+}
+.user-image  {
+    float: left;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    border-radius:50%;
+    overflow:hidden;
+}
+.user-info{
+    margin-left: 16px;
+    float: left;
+}
+.user-name{
+    font-size: 14px;
+    color: #212121;
+    font-weight: 500;
+    display: inline-block;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
+}
+.user-sign{
+    margin-top: 4px;
+    width: 256px;
+    font-size: 12px;
+    line-height: 16px;
+    height: 16px;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.user-bth{
+    clear: both;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 63px;
+    white-space: nowrap;
+}
+.video-info .video-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #212121;
+    line-height: 26px;
+    height: 26px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.video-info .video-data {
+    margin-top: 11px;
+    font-size: 12px;
+    height: 16px;
+    color: #999;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.recommend-title{
+    font-size: 16px;
+    color: #222;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+.video-card-page{
+    padding: 6px;
+}
+.video-card-page .card-box{
+    display: flex;
+}
+.card-box .pic-box{
+    position: relative;
+    width: 141px;
+    height: 80px;
+    border-radius: 2px;
+    background: #f4f5f7;
+}
+.card-box .card-info{
+    margin-left: 10px;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 0;
+}
+.card-info .title{
+    height: 36px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+
+.card-info .count{
+    display: inline-block;
+    height: 16px;
+    width: 100%;
+    color: #999;
+    font-size: 12px;
+}
